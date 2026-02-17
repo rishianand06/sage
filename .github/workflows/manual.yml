@@ -21,7 +21,7 @@ jobs:
       ### Configure DETECT environment variables
       env:
         DETECT_PROJECT_NAME: ${{ github.event.repository.name }}
-        
+        DETECT_BLACKDUCK_SCAN_MODE: ${{ vars.DETECT_BLACKDUCK_SCAN_MODE }}
         
       with:
         ### SCANNING: Required fields
